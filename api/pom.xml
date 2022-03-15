@@ -69,24 +69,21 @@
                 <artifactId>exec-maven-plugin</artifactId>
             </plugin>
             <plugin>
-                <groupId>io.swagger.codegen.v3</groupId>
-                <artifactId>swagger-codegen-maven-plugin</artifactId>
-                <version>3.0.32</version>
+                <groupId>com.okta.sdk</groupId>
+                <artifactId>okta-sdk-codegen-maven-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <generateApiDocumentation>false</generateApiDocumentation>
-                            <generateApiTests>false</generateApiTests>
-                            <generateModelDocumentation>false</generateModelDocumentation>
-                            <generateModelTests>false</generateModelTests>
-                            <!--suppress UnresolvedMavenProperty -->
-                            <inputSpec>${maven.multiModuleProjectDirectory}/src/swagger/api.yaml</inputSpec>
-                            <language>com.okta.swagger.codegen.OktaJavaClientApiCodegen</language>
-                            <output>${project.build.directory}/generated-sources/swagger-codegen</output>
+                            <language>java</language>
+                            <configFile>${project.basedir}/config.json</configFile>
+                            <errataFile>${project.basedir}/errata.json</errataFile>
                             <templateDirectory>${maven.multiModuleProjectDirectory}/swagger-templates/src/main/resources/OktaJava</templateDirectory>
+                            <modelPackage>com.okta.sdk.resource</modelPackage>
+                            <output>${project.build.directory}/generated-sources/swagger-codegen</output>
                         </configuration>
                     </execution>
                 </executions>

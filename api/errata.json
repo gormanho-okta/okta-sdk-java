@@ -1,0 +1,13 @@
+[
+  {
+    "type": "rename",
+    "parameters": {
+      "requestBodies": [
+        { "operation": "createApplication", "to": "application" },
+        { "operation": "updateApplication", "to": "application" },
+        { "operation": "generateCsrForApplication", "to": "metadata" },
+        { "operation": "grantConsentToScope", "to": "oAuth2ScopeConsentGrant" }
+      ]
+    }
+  }
+]
