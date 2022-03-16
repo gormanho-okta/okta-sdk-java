@@ -1,5 +1,9 @@
 [
   {
+    "type": "setOperationTags",
+    "parameters": { "name": ".*", "tags": ["client"] }
+  },
+  {
     "type": "rename",
     "parameters": {
       "requestBodies": [
