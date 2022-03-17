@@ -11,5 +11,11 @@
       { "operation": "generateCsrForApplication", "to": "metadata" },
       { "operation": "grantConsentToScope", "to": "oAuth2ScopeConsentGrant" }
     ]
+  },
+  {
+    "type": "renameApi",
+    "parameters": [
+      { "from": "ClientApi", "to": "Client" }
+    ]
   }
 ]
