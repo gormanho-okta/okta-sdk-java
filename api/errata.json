@@ -17,5 +17,9 @@
     "parameters": [
       { "from": "ClientApi", "to": "Client" }
     ]
+  },
+  {
+    "type": "removeParameter",
+    "parameters": ["after", "limit"]
   }
 ]
