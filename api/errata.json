@@ -21,5 +21,12 @@
   {
     "type": "removeParameter",
     "parameters": ["after", "limit"]
+  },
+  {
+    "type": "renameParameter",
+    "parameters": [
+      { "from":  "oauthClient", "to":  "oAuthClient" },
+      { "from":  "oauthTokens", "to":  "oAuthTokens" }
+    ]
   }
 ]
