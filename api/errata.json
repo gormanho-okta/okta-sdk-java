@@ -1,5 +1,9 @@
 [
   {
+    "type": "setBooleanOperationPrefix",
+    "parameters": { "prefix": "get" }
+  },
+  {
     "type": "setOperationTags",
     "parameters": { "name": ".*", "tags": ["client"] }
   },
