@@ -35,5 +35,11 @@
       { "from":  "oauthClient", "to":  "oAuthClient" },
       { "from":  "oauthTokens", "to":  "oAuthTokens" }
     ]
+  },
+  {
+    "type": "overridePropertyType",
+    "parameters": [
+      { "format": "password", "type": "char[]" }
+    ]
   }
 ]
