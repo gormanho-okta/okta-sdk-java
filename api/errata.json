@@ -1,7 +1,10 @@
 [
   {
-    "type": "setBooleanOperationPrefix",
-    "parameters": { "prefix": "get" }
+    "type": "setGlobalOptions",
+    "parameters": {
+      "booleanOperationPrefix": "get",
+      "resolvePropertyConflictsForJava": false
+    }
   },
   {
     "type": "setOperationTags",
