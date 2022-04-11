@@ -49,5 +49,11 @@
         "type": "List<JsonWebKey>"
       }
     ]
+  },
+  {
+    "type": "overrideParameterType",
+    "parameters": [
+      { "format": "binary", "type": "InputStream" }
+    ]
   }
 ]
