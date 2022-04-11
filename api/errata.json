@@ -42,7 +42,12 @@
   {
     "type": "overridePropertyType",
     "parameters": [
-      { "format": "password", "type": "char[]" }
+      { "format": "password", "type": "char[]" },
+      {
+        "model": "OpenIdConnectApplicationSettingsClientKeys",
+        "property": "keys",
+        "type": "List<JsonWebKey>"
+      }
     ]
   }
 ]
