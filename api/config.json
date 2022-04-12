@@ -1,5 +1,6 @@
 {
   "apiPackage": "com.okta.sdk.client",
+  "sourceFolder": "",
   "library": "resttemplate",
   "dateLibrary": "legacy",
   "hideGenerationTimestamp": true
