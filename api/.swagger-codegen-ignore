@@ -1,0 +1,3 @@
+**/auth/*
+**/ApiClient.java
+**/RFC3339DateFormat.java

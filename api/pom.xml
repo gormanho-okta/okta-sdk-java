@@ -81,6 +81,7 @@
                             <language>java</language>
                             <configFile>${project.basedir}/config.json</configFile>
                             <errataFile>${project.basedir}/errata.json</errataFile>
+                            <ignoreFile>${project.basedir}/.swagger-codegen-ignore</ignoreFile>
                             <templateDirectory>${maven.multiModuleProjectDirectory}/swagger-templates/src/main/resources/OktaJava</templateDirectory>
                             <modelPackage>com.okta.sdk.resource</modelPackage>
                             <output>${project.build.directory}/generated-sources/swagger-codegen</output>
